@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang='zh-Hant'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>20260503 台美股週複盤</title>
+<style>
+:root{--bg:#f6f8fc;--card:#ffffff;--muted:#667085;--text:#182230;--line:#d9e2ef;--gold:#b7791f;--green:#168457;--red:#d92d20;--blue:#2563eb;--soft:#eef4ff;--soft2:#fff7e6}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#f8fbff,#eef4ff 45%,#fffaf0);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC',sans-serif;line-height:1.58}
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 48px} h1{font-size:30px;margin:0 0 6px;color:#101828} h2{font-size:21px;margin:28px 0 12px;border-left:5px solid #f2b84b;padding-left:10px;color:#101828} h3{font-size:17px;margin:18px 0 8px;color:#24324a}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 10px 24px rgba(16,24,40,.07)}
+.k{font-size:13px;color:var(--muted)}.v{font-size:25px;font-weight:800;margin-top:3px;color:#111827}.gold{color:var(--gold)}.good{color:var(--green)}.bad{color:var(--red)}.neutral{color:#475467}.hot{color:#b45309}.blue{color:var(--blue)}
+.progress{height:22px;background:#edf2f7;border-radius:999px;overflow:hidden;border:1px solid #cbd5e1}.bar{height:100%;background:linear-gradient(90deg,#93c5fd,#facc15);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#1f2937}
+.callout{border:1px solid rgba(242,184,75,.7);background:linear-gradient(135deg,rgba(255,247,230,.92),rgba(238,244,255,.92));border-radius:16px;padding:16px;margin:12px 0}
+ul{margin:8px 0 0;padding-left:22px} li{margin:5px 0} table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden} th,td{padding:10px 9px;border-bottom:1px solid var(--line);font-size:14px} th{text-align:left;color:#344054;background:#f1f5fb;position:sticky;top:0} td.num, th.num{text-align:right;font-variant-numeric:tabular-nums}.scroll{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 20px rgba(16,24,40,.05)}
+.tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#eaf1ff;color:#1d4ed8;font-size:12px;margin:2px 4px 2px 0}.footer{margin-top:30px;color:var(--muted);font-size:12px}.tabbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.tabbtn{border:1px solid #c7d7ee;background:#fff;color:#1f2a44;border-radius:999px;padding:8px 13px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(16,24,40,.05)}.tabbtn.active{background:#2563eb;color:white;border-color:#2563eb}.sort-panel{display:none}.sort-panel.active{display:block}.hint{font-size:13px;color:var(--muted);margin:-4px 0 10px}.updated{display:inline-block;background:#ecfdf3;color:#067647;border:1px solid #abefc6;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;margin-left:6px}
+@media(max-width:820px){.grid,.grid2{grid-template-columns:1fr} h1{font-size:25px}.v{font-size:22px} th,td{font-size:13px;white-space:nowrap}.tabbtn{padding:7px 10px}}
+</style></head><body><div class='wrap'>
+<h1>2026/05/03 台美股週複盤</h1>
+<div class='muted'>依據鏟屎官提供之台股/美股庫存 CSV 與方舟風控運算機截圖整理。美股台幣估值採方舟截圖隱含匯率約 <b>31.58</b>。</div>
+
+<h2>一、方舟風控總覽</h2>
+<div class='grid'>
+ <div class='card'><div class='k'>現在持股（台幣計價）</div><div class='v'>6,643,833</div><div class='muted'>52.78%</div></div>
+ <div class='card'><div class='k'>資金總額</div><div class='v'>5,942,972</div><div class='muted'>台幣 5,584,922 + 美元 $11,337.86</div></div>
+ <div class='card'><div class='k'>建議持股</div><div class='v gold'>8,005,208</div><div class='muted'>63.6%</div></div>
+ <div class='card'><div class='k'>建議布局金額</div><div class='v gold'>1,361,375</div><div class='muted'>布局後建議閒錢 4,581,597</div></div>
+</div>
+<div class='card' style='margin-top:12px'>
+ <div class='k'>持股配置進度</div>
+ <div class='progress' style='margin-top:8px'><div class='bar' style='width:83.0%'>目前 52.78% / 目標 63.6%</div></div>
+ <div class='callout'><b>方舟結論：</b>本週不是「參考調節」，而是顯示 <b class='gold'>建議布局金額 TWD 1,361,375</b>。代表現金部位充足，持股比例仍低於方舟建議配置，可依位階運算機分批布局。</div>
+</div>
+
+<h2>二、庫存損益概況</h2>
+<div class='grid'>
+ <div class='card'><div class='k'>台股成本</div><div class='v'>2,775,442</div></div>
+ <div class='card'><div class='k'>台股現值</div><div class='v'>3,515,723</div><div class='muted'>方舟截圖：3,523,570</div></div>
+ <div class='card'><div class='k'>台股未實現損益</div><div class='v good'>+740,281</div><div class='muted'>26.67%</div></div>
+ <div class='card'><div class='k'>台股檔數</div><div class='v'>19</div></div>
+ <div class='card'><div class='k'>美股成本</div><div class='v'>$88,541.54</div></div>
+ <div class='card'><div class='k'>美股現值</div><div class='v'>$98,805.03</div><div class='muted'>約 TWD 3,120,263</div></div>
+ <div class='card'><div class='k'>美股未實現損益</div><div class='v good'>+$10,263.49</div><div class='muted'>11.59%</div></div>
+ <div class='card'><div class='k'>美股檔數</div><div class='v'>17</div></div>
+</div>
+
+<h2>三、集中度觀察</h2>
+<div class='grid2'>
+ <div class='card'><div class='k'>前五大持股占整體</div><div class='v neutral'>39.38%</div><div class='muted'>GEV、TSM ADR、元大台灣50正2、台達電、京元電子</div></div>
+ <div class='card'><div class='k'>前十大持股占整體</div><div class='v'>62.83%</div><div class='muted'>集中在半導體、AI 電力/能源、科技 ETF</div></div>
+</div>
+<div class='scroll' style='margin-top:12px'><table><thead><tr><th>#</th><th>標的</th><th>市場</th><th class='num'>台幣估值</th><th class='num'>占整體</th></tr></thead><tbody><tr><td>1</td><td>GEV GE Vernova Inc</td><td>美股</td><td class='num'>939,903</td><td class='num'>14.15%</td></tr>
+<tr><td>2</td><td>TSM Taiwan Semiconductor Manufactu</td><td>美股</td><td class='num'>452,103</td><td class='num'>6.80%</td></tr>
+<tr><td>3</td><td>元大台灣50正2</td><td>台股/ETF</td><td class='num'>435,524</td><td class='num'>6.56%</td></tr>
+<tr><td>4</td><td>台達電</td><td>台股/ETF</td><td class='num'>418,627</td><td class='num'>6.30%</td></tr>
+<tr><td>5</td><td>京元電子</td><td>台股/ETF</td><td class='num'>370,516</td><td class='num'>5.58%</td></tr>
+<tr><td>6</td><td>AMAT Applied Materials Inc</td><td>美股</td><td class='num'>356,327</td><td class='num'>5.36%</td></tr>
+<tr><td>7</td><td>台積電</td><td>台股/ETF</td><td class='num'>348,982</td><td class='num'>5.25%</td></tr>
+<tr><td>8</td><td>矽力*-KY</td><td>台股/ETF</td><td class='num'>309,819</td><td class='num'>4.66%</td></tr>
+<tr><td>9</td><td>第一金太空衛星</td><td>台股/ETF</td><td class='num'>293,113</td><td class='num'>4.41%</td></tr>
+<tr><td>10</td><td>元大台灣50</td><td>台股/ETF</td><td class='num'>249,632</td><td class='num'>3.76%</td></tr>
+<tr><td>11</td><td>LITE Lumentum Holdings Inc</td><td>美股</td><td class='num'>239,990</td><td class='num'>3.61%</td></tr>
+<tr><td>12</td><td>中信上游半導體</td><td>台股/ETF</td><td class='num'>233,326</td><td class='num'>3.51%</td></tr></tbody></table></div>
+
+<h2>四、調節四問</h2>
+<div class='card'><ul>
+<li><b>Q1 是否已有過熱/位階最高？</b>目前未提供單檔位階明細，只能從損益與集中度初篩；BE、台達電、矽力*-KY 獲利幅度高，若方舟位階也偏高，列為優先檢查。</li>
+<li><b>Q2 是否進入升溫區？</b>截圖整體儀表有「位階增溫」訊號，單檔仍需位階運算機/自選頁確認。</li>
+<li><b>Q3 是否超過風控上限？</b>整體持股 52.78%，低於方舟建議 63.6%，未顯示總倉位超標。</li>
+<li><b>Q4 是否需要修剪枯枝？</b>目前虧損標的為 KLAC、FLY、NVDA、ASML、啟碁；其中虧損幅度最大為 FLY -7.65%、KLAC -5.14%。若位階不佳且非核心配置，可列入觀察，而非因虧損直接砍。</li>
+</ul></div>
+
+<h2>五、本週行動建議</h2>
+<div class='callout'><ul>
+<li><b>主軸：</b>依方舟結果，本週優先做「布局」而不是「調節」。</li>
+<li><b>金額：</b>建議布局上限以 TWD 1,361,375 為基準，不一次打滿，交給位階運算機拆分檔數與股數。</li>
+<li><b>布局順序：</b>先從 ETF 價值區/低位階標的挑選；避開已升溫或過熱且占比偏高的標的。</li>
+<li><b>調節條件：</b>若 BE、台達電、矽力*-KY、GEV 等高獲利或高占比標的在方舟顯示過熱/升溫，再依建議調節股數處理；否則維持現狀。</li>
+<li><b>下一份資料：</b>若要精準到「買哪幾檔、幾股」，還需要位階運算機截圖或 ETF 價值區名單。</li>
+</ul></div>
+
+
+
+<h2>六、方舟價值區：建議布局股數</h2>
+<div class='callout'><b>使用方式：</b>本週方舟風控給出建議布局 TWD 1,361,375；以下「位階股數」可作為單檔試單/分批起點，「風控股數」是方舟風控上限參考。實際下單仍以當下 App 重新運算為準。</div>
+<h3>台股 / ETF 價值區</h3>
+<div class='scroll'><table><thead><tr><th>名稱</th><th>代號</th><th class='num'>即時淨值</th><th class='num'>折溢價</th><th class='num'>位階股數</th><th class='num'>風控股數</th><th>複盤註記</th></tr></thead><tbody>
+<tr><td>第一金太空衛星</td><td>00910</td><td class='num'>64.39</td><td class='num good'>-0.06%</td><td class='num gold'>128</td><td class='num'>2,115</td><td>現有庫存主軸之一，可依位階分批。</td></tr>
+<tr><td>元大全球未來通訊</td><td>00861</td><td class='num'>75.22</td><td class='num good'>-0.03%</td><td class='num gold'>26</td><td class='num'>1,810</td><td>已有庫存，屬可續布局候選。</td></tr>
+<tr><td>元大全球5G</td><td>00876</td><td class='num'>74.66</td><td class='num'>0.32%</td><td class='num gold'>25</td><td class='num'>1,817</td><td>已有庫存，注意折溢價不宜追高。</td></tr>
+<tr><td>元大台灣50正2</td><td>00631L</td><td class='num'>28.49</td><td class='num'>0.42%</td><td class='num gold'>65</td><td class='num'>4,758</td><td>既有高報酬且占比不低，布局宜小單、嚴守位階。</td></tr>
+<tr><td>元大台灣50</td><td>0050</td><td class='num'>89.58</td><td class='num hot'>1.03%</td><td class='num gold'>20</td><td class='num'>1,504</td><td>折溢價較高，若布局可排後或等折溢價收斂。</td></tr>
+<tr><td>兆豐洲際半導體</td><td>00911</td><td class='num'>48.36</td><td class='num good'>-0.12%</td><td class='num gold'>35</td><td class='num'>2,818</td><td>已有庫存，折價狀態相對友善。</td></tr>
+<tr><td>國泰費城半導體</td><td>00830</td><td class='num'>72.12</td><td class='num'>0.04%</td><td class='num gold'>23</td><td class='num'>1,886</td><td>已有庫存，可作為半導體 ETF 的分批選項。</td></tr>
+<tr><td>元大中型100</td><td>0051</td><td class='num'>126.38</td><td class='num'>0.29%</td><td class='num gold'>13</td><td class='num'>1,074</td><td>已有庫存但金額小，可視分散需求補位。</td></tr>
+<tr><td>主動統一全球創新</td><td>00988A</td><td class='num'>17.10</td><td class='num good'>-0.35%</td><td class='num gold'>94</td><td class='num'>7,989</td><td>折價且位階股數較多，屬本週可優先觀察。</td></tr>
+<tr><td>富邦ESG綠色電力</td><td>00920</td><td class='num'>26.13</td><td class='num good'>-0.19%</td><td class='num gold'>56</td><td class='num'>5,219</td><td>同時在升溫區，布局需保守，不追價。</td></tr>
+</tbody></table></div>
+
+<h3>美股價值區</h3>
+<div class='scroll'><table><thead><tr><th>名稱</th><th>代號</th><th class='num'>股價</th><th class='num'>漲跌幅</th><th class='num'>位階股數</th><th class='num'>風控股數</th><th>複盤註記</th></tr></thead><tbody>
+<tr><td>Firefly Aerospace</td><td>FLY</td><td class='num'>$33.80</td><td class='num good'>-2.31%</td><td class='num gold'>6.18</td><td class='num'>127.54</td><td>目前庫存虧損，若仍在價值區可用小股數修正成本。</td></tr>
+<tr><td>Satellogic</td><td>SATL</td><td class='num'>$7.18</td><td class='num hot'>+11.15%</td><td class='num gold'>19.05</td><td class='num'>600.40</td><td>漲幅大但仍在價值區，避免一次加太多。</td></tr>
+<tr><td>Applied Materials</td><td>AMAT</td><td class='num'>$389.08</td><td class='num good'>-1.37%</td><td class='num gold'>0.31</td><td class='num'>11.07</td><td>半導體設備核心庫存，可按位階補。</td></tr>
+<tr><td>NVIDIA</td><td>NVDA</td><td class='num'>$198.45</td><td class='num good'>-0.56%</td><td class='num gold'>0.52</td><td class='num'>21.72</td><td>目前小幅虧損，位階補單可改善成本。</td></tr>
+<tr><td>GE Vernova</td><td>GEV</td><td class='num'>$1,062.95</td><td class='num good'>-1.89%</td><td class='num gold'>0.09</td><td class='num'>4.05</td><td>整體高占比且已有獲利，布局需非常小單。</td></tr>
+<tr><td>Broadcom</td><td>AVGO</td><td class='num'>$421.28</td><td class='num'>+0.92%</td><td class='num gold'>0.16</td><td class='num'>10.23</td><td>可列半導體核心補位，但不追高。</td></tr>
+<tr><td>台積電 ADR</td><td>TSM</td><td class='num'>$397.67</td><td class='num'>+0.41%</td><td class='num gold'>0.16</td><td class='num'>10.84</td><td>既有大部位且獲利，補單以風控為上限。</td></tr>
+<tr><td>Lumentum</td><td>LITE</td><td class='num'>$949.93</td><td class='num hot'>+5.28%</td><td class='num gold'>0.06</td><td class='num'>4.53</td><td>漲幅偏大，若要補只適合極小位階。</td></tr>
+<tr><td>Micron</td><td>MU</td><td class='num'>$542.21</td><td class='num hot'>+4.84%</td><td class='num gold'>0.09</td><td class='num'>7.95</td><td>短線升幅大，等待回落會更符合紀律。</td></tr>
+</tbody></table></div>
+
+<h2>七、方舟升溫區觀察</h2>
+<div class='card'><ul>
+<li><b>台股升溫區：</b>中信電池及儲能 00902、富邦ESG綠色電力 00920、永豐臺灣加權 006204、期街口布蘭特正2 00715L、台新臺灣IC設計 00947、主動野村臺灣優選 00980A、富邦旗艦50 009802。</li>
+<li><b>與庫存重疊：</b>富邦ESG綠色電力 00920 已在庫存且同時出現在價值區與升溫區；本週若要布局，建議降低順位或只按位階小額處理。</li>
+<li><b>美股升溫區：</b>Alphabet / GOOG（383.22，+0.34%，互聯網內容及資訊）、AMD（360.54，+1.71%，半導體）、Cisco / CSCO（91.85，+0.38%，通信設備）。</li>
+<li><b>調節含義：</b>整體風控仍是「建議布局」，所以升溫區不是立即賣出的訊號；它是提醒不要追價，若單檔同時高報酬、高占比、升溫，再進入調節四問。</li>
+<li><b>本次美股升溫區與庫存重疊：</b>GOOG、AMD、CSCO 目前不在本次美股庫存 CSV 內，因此先列為觀察，不列入本週既有庫存調節名單。</li>
+</ul></div>
+
+<h2>八、本週布局優先順序</h2>
+<div class='callout'><ol>
+<li><b>優先：</b>折價且在價值區的既有核心 ETF，例如 00988A、00911、00910、00861。</li>
+<li><b>次優先：</b>美股價值區中目前小虧或回落的核心標的，例如 NVDA、AMAT、FLY；但依位階股數小單分批。</li>
+<li><b>保守/排後：</b>短線漲幅較大的 SATL、LITE、MU，以及折溢價偏高的 0050；美股升溫區 GOOG、AMD、CSCO 也不追價，先觀察。</li>
+<li><b>需控管：</b>GEV、TSM ADR、00631L、台達電等已是整體主要部位，除非位階非常明確，否則避免讓集中度再明顯升高。</li>
+</ol></div>
+
+
+<h2>九、台股明細 <span class='updated'>可切換排序</span></h2>
+<div class='hint'>預設依持股占比由大到小；也可切到損益由小到大，先看虧損/低貢獻標的。</div>
+<div class='tabbar' data-group='tw'><button class='tabbtn active' data-target='tw-share'>持股占比排序</button><button class='tabbtn' data-target='tw-pnl'>損益由小到大</button></div>
+<div id='tw-share' class='sort-panel active'><div class='scroll'><table><thead><tr><th>名稱</th><th class='num'>股數</th><th class='num'>現值</th><th class='num'>成本</th><th class='num'>損益</th><th class='num'>報酬率</th><th class='num'>台股占比</th></tr></thead><tbody><tr><td>元大台灣50正2</td><td class='num'>15,244</td><td class='num'>435,524</td><td class='num'>327,935</td><td class='num hot'>107,589</td><td class='num hot'>32.81%</td><td class='num'>12.39%</td></tr>
+<tr><td>台達電</td><td class='num'>194</td><td class='num'>418,627</td><td class='num'>219,421</td><td class='num hot'>199,206</td><td class='num hot'>90.79%</td><td class='num'>11.91%</td></tr>
+<tr><td>京元電子</td><td class='num'>1,229</td><td class='num'>370,516</td><td class='num'>320,364</td><td class='num good'>50,152</td><td class='num good'>15.65%</td><td class='num'>10.54%</td></tr>
+<tr><td>台積電</td><td class='num'>164</td><td class='num'>348,982</td><td class='num'>278,972</td><td class='num good'>70,010</td><td class='num good'>25.10%</td><td class='num'>9.93%</td></tr>
+<tr><td>矽力*-KY</td><td class='num'>728</td><td class='num'>309,819</td><td class='num'>193,956</td><td class='num hot'>115,863</td><td class='num hot'>59.74%</td><td class='num'>8.81%</td></tr>
+<tr><td>第一金太空衛星</td><td class='num'>4,561</td><td class='num'>293,113</td><td class='num'>261,680</td><td class='num good'>31,433</td><td class='num good'>12.01%</td><td class='num'>8.34%</td></tr>
+<tr><td>元大台灣50</td><td class='num'>2,762</td><td class='num'>249,632</td><td class='num'>211,802</td><td class='num good'>37,830</td><td class='num good'>17.86%</td><td class='num'>7.10%</td></tr>
+<tr><td>中信上游半導體</td><td class='num'>9,875</td><td class='num'>233,326</td><td class='num'>217,805</td><td class='num neutral'>15,521</td><td class='num neutral'>7.13%</td><td class='num'>6.64%</td></tr>
+<tr><td>元大全球未來通訊</td><td class='num'>3,095</td><td class='num'>232,432</td><td class='num'>202,789</td><td class='num good'>29,643</td><td class='num good'>14.62%</td><td class='num'>6.61%</td></tr>
+<tr><td>元大全球5G</td><td class='num'>3,072</td><td class='num'>229,781</td><td class='num'>194,921</td><td class='num good'>34,860</td><td class='num good'>17.88%</td><td class='num'>6.54%</td></tr>
+<tr><td>富邦ESG綠色電力</td><td class='num'>5,080</td><td class='num'>132,307</td><td class='num'>110,372</td><td class='num good'>21,935</td><td class='num good'>19.87%</td><td class='num'>3.76%</td></tr>
+<tr><td>力成</td><td class='num'>460</td><td class='num'>93,068</td><td class='num'>90,500</td><td class='num neutral'>2,568</td><td class='num neutral'>2.84%</td><td class='num'>2.65%</td></tr>
+<tr><td>兆豐洲際半導體</td><td class='num'>1,683</td><td class='num'>81,182</td><td class='num'>65,659</td><td class='num good'>15,523</td><td class='num good'>23.64%</td><td class='num'>2.31%</td></tr>
+<tr><td>國泰費城半導體</td><td class='num'>632</td><td class='num'>45,538</td><td class='num'>38,350</td><td class='num good'>7,188</td><td class='num good'>18.74%</td><td class='num'>1.30%</td></tr>
+<tr><td>啟碁</td><td class='num'>72</td><td class='num'>15,501</td><td class='num'>15,609</td><td class='num bad'>-108</td><td class='num bad'>-0.69%</td><td class='num'>0.44%</td></tr>
+<tr><td>元大中型100</td><td class='num'>73</td><td class='num'>9,238</td><td class='num'>8,850</td><td class='num neutral'>388</td><td class='num neutral'>4.38%</td><td class='num'>0.26%</td></tr>
+<tr><td>主動統一全球創新</td><td class='num'>472</td><td class='num'>8,031</td><td class='num'>7,656</td><td class='num neutral'>375</td><td class='num neutral'>4.90%</td><td class='num'>0.23%</td></tr>
+<tr><td>富邦科技</td><td class='num'>107</td><td class='num'>5,626</td><td class='num'>5,537</td><td class='num neutral'>89</td><td class='num neutral'>1.61%</td><td class='num'>0.16%</td></tr>
+<tr><td>FT潔淨能源</td><td class='num'>136</td><td class='num'>3,480</td><td class='num'>3,264</td><td class='num neutral'>216</td><td class='num neutral'>6.62%</td><td class='num'>0.10%</td></tr></tbody></table></div></div>
+<div id='tw-pnl' class='sort-panel'><div class='scroll'><table><thead><tr><th>名稱</th><th class='num'>股數</th><th class='num'>現值</th><th class='num'>成本</th><th class='num'>損益</th><th class='num'>報酬率</th><th class='num'>台股占比</th></tr></thead><tbody><tr><td>啟碁</td><td class='num'>72</td><td class='num'>15,501</td><td class='num'>15,609</td><td class='num bad'>-108</td><td class='num bad'>-0.69%</td><td class='num'>0.44%</td></tr>
+<tr><td>富邦科技</td><td class='num'>107</td><td class='num'>5,626</td><td class='num'>5,537</td><td class='num neutral'>89</td><td class='num neutral'>1.61%</td><td class='num'>0.16%</td></tr>
+<tr><td>FT潔淨能源</td><td class='num'>136</td><td class='num'>3,480</td><td class='num'>3,264</td><td class='num neutral'>216</td><td class='num neutral'>6.62%</td><td class='num'>0.10%</td></tr>
+<tr><td>主動統一全球創新</td><td class='num'>472</td><td class='num'>8,031</td><td class='num'>7,656</td><td class='num neutral'>375</td><td class='num neutral'>4.90%</td><td class='num'>0.23%</td></tr>
+<tr><td>元大中型100</td><td class='num'>73</td><td class='num'>9,238</td><td class='num'>8,850</td><td class='num neutral'>388</td><td class='num neutral'>4.38%</td><td class='num'>0.26%</td></tr>
+<tr><td>力成</td><td class='num'>460</td><td class='num'>93,068</td><td class='num'>90,500</td><td class='num neutral'>2,568</td><td class='num neutral'>2.84%</td><td class='num'>2.65%</td></tr>
+<tr><td>國泰費城半導體</td><td class='num'>632</td><td class='num'>45,538</td><td class='num'>38,350</td><td class='num good'>7,188</td><td class='num good'>18.74%</td><td class='num'>1.30%</td></tr>
+<tr><td>中信上游半導體</td><td class='num'>9,875</td><td class='num'>233,326</td><td class='num'>217,805</td><td class='num neutral'>15,521</td><td class='num neutral'>7.13%</td><td class='num'>6.64%</td></tr>
+<tr><td>兆豐洲際半導體</td><td class='num'>1,683</td><td class='num'>81,182</td><td class='num'>65,659</td><td class='num good'>15,523</td><td class='num good'>23.64%</td><td class='num'>2.31%</td></tr>
+<tr><td>富邦ESG綠色電力</td><td class='num'>5,080</td><td class='num'>132,307</td><td class='num'>110,372</td><td class='num good'>21,935</td><td class='num good'>19.87%</td><td class='num'>3.76%</td></tr>
+<tr><td>元大全球未來通訊</td><td class='num'>3,095</td><td class='num'>232,432</td><td class='num'>202,789</td><td class='num good'>29,643</td><td class='num good'>14.62%</td><td class='num'>6.61%</td></tr>
+<tr><td>第一金太空衛星</td><td class='num'>4,561</td><td class='num'>293,113</td><td class='num'>261,680</td><td class='num good'>31,433</td><td class='num good'>12.01%</td><td class='num'>8.34%</td></tr>
+<tr><td>元大全球5G</td><td class='num'>3,072</td><td class='num'>229,781</td><td class='num'>194,921</td><td class='num good'>34,860</td><td class='num good'>17.88%</td><td class='num'>6.54%</td></tr>
+<tr><td>元大台灣50</td><td class='num'>2,762</td><td class='num'>249,632</td><td class='num'>211,802</td><td class='num good'>37,830</td><td class='num good'>17.86%</td><td class='num'>7.10%</td></tr>
+<tr><td>京元電子</td><td class='num'>1,229</td><td class='num'>370,516</td><td class='num'>320,364</td><td class='num good'>50,152</td><td class='num good'>15.65%</td><td class='num'>10.54%</td></tr>
+<tr><td>台積電</td><td class='num'>164</td><td class='num'>348,982</td><td class='num'>278,972</td><td class='num good'>70,010</td><td class='num good'>25.10%</td><td class='num'>9.93%</td></tr>
+<tr><td>元大台灣50正2</td><td class='num'>15,244</td><td class='num'>435,524</td><td class='num'>327,935</td><td class='num hot'>107,589</td><td class='num hot'>32.81%</td><td class='num'>12.39%</td></tr>
+<tr><td>矽力*-KY</td><td class='num'>728</td><td class='num'>309,819</td><td class='num'>193,956</td><td class='num hot'>115,863</td><td class='num hot'>59.74%</td><td class='num'>8.81%</td></tr>
+<tr><td>台達電</td><td class='num'>194</td><td class='num'>418,627</td><td class='num'>219,421</td><td class='num hot'>199,206</td><td class='num hot'>90.79%</td><td class='num'>11.91%</td></tr></tbody></table></div></div>
+
+<h2>十、美股明細 <span class='updated'>可切換排序</span></h2>
+<div class='hint'>預設依持股占比由大到小；損益排序會把虧損或獲利最低的標的排前面，方便週檢。</div>
+<div class='tabbar' data-group='us'><button class='tabbtn active' data-target='us-share'>持股占比排序</button><button class='tabbtn' data-target='us-pnl'>損益由小到大</button></div>
+<div id='us-share' class='sort-panel active'><div class='scroll'><table><thead><tr><th>代號</th><th>名稱</th><th class='num'>股數</th><th class='num'>現值</th><th class='num'>成本</th><th class='num'>損益</th><th class='num'>報酬率</th><th class='num'>美股占比</th></tr></thead><tbody><tr><td>GEV</td><td>GE Vernova Inc</td><td class='num'>28</td><td class='num'>$29,762.60</td><td class='num'>$26,931.63</td><td class='num good'>$2,830.97</td><td class='num good'>10.51%</td><td class='num'>30.12%</td></tr>
+<tr><td>TSM</td><td>Taiwan Semiconductor Manufactu</td><td class='num'>36</td><td class='num'>$14,316.12</td><td class='num'>$12,547.25</td><td class='num good'>$1,768.87</td><td class='num good'>14.10%</td><td class='num'>14.49%</td></tr>
+<tr><td>AMAT</td><td>Applied Materials Inc</td><td class='num'>29</td><td class='num'>$11,283.32</td><td class='num'>$10,893.49</td><td class='num neutral'>$389.83</td><td class='num neutral'>3.58%</td><td class='num'>11.42%</td></tr>
+<tr><td>LITE</td><td>Lumentum Holdings Inc</td><td class='num'>8</td><td class='num'>$7,599.44</td><td class='num'>$6,975.88</td><td class='num neutral'>$623.56</td><td class='num neutral'>8.94%</td><td class='num'>7.69%</td></tr>
+<tr><td>BE</td><td>Bloom Energy Corp</td><td class='num'>25</td><td class='num'>$7,263.00</td><td class='num'>$3,335.04</td><td class='num hot'>$3,927.96</td><td class='num hot'>117.78%</td><td class='num'>7.35%</td></tr>
+<tr><td>KLAC</td><td>KLA Corp</td><td class='num'>3</td><td class='num'>$5,178.78</td><td class='num'>$5,459.38</td><td class='num bad'>$-280.60</td><td class='num bad'>-5.14%</td><td class='num'>5.24%</td></tr>
+<tr><td>AAPL</td><td>Apple Inc</td><td class='num'>18</td><td class='num'>$5,042.52</td><td class='num'>$4,583.35</td><td class='num good'>$459.17</td><td class='num good'>10.02%</td><td class='num'>5.10%</td></tr>
+<tr><td>LRCX</td><td>Lam Research Corp</td><td class='num'>18</td><td class='num'>$4,620.96</td><td class='num'>$4,400.25</td><td class='num neutral'>$220.71</td><td class='num neutral'>5.02%</td><td class='num'>4.68%</td></tr>
+<tr><td>SATL</td><td>Satellogic Inc</td><td class='num'>414</td><td class='num'>$2,972.52</td><td class='num'>$2,822.67</td><td class='num neutral'>$149.85</td><td class='num neutral'>5.31%</td><td class='num'>3.01%</td></tr>
+<tr><td>LIN</td><td>Linde PLC</td><td class='num'>5</td><td class='num'>$2,539.60</td><td class='num'>$2,500.51</td><td class='num neutral'>$39.09</td><td class='num neutral'>1.56%</td><td class='num'>2.57%</td></tr>
+<tr><td>AVGO</td><td>Broadcom Inc</td><td class='num'>6</td><td class='num'>$2,527.68</td><td class='num'>$2,461.43</td><td class='num neutral'>$66.25</td><td class='num neutral'>2.69%</td><td class='num'>2.56%</td></tr>
+<tr><td>FLY</td><td>Firefly Aerospace Inc</td><td class='num'>43</td><td class='num'>$1,453.40</td><td class='num'>$1,573.85</td><td class='num bad'>$-120.45</td><td class='num bad'>-7.65%</td><td class='num'>1.47%</td></tr>
+<tr><td>ASML</td><td>ASML Holding NV</td><td class='num'>1</td><td class='num'>$1,427.02</td><td class='num'>$1,448.56</td><td class='num bad'>$-21.54</td><td class='num bad'>-1.49%</td><td class='num'>1.44%</td></tr>
+<tr><td>MU</td><td>Micron Technology Inc</td><td class='num'>2</td><td class='num'>$1,084.42</td><td class='num'>$1,050.51</td><td class='num neutral'>$33.91</td><td class='num neutral'>3.23%</td><td class='num'>1.10%</td></tr>
+<tr><td>NVDA</td><td>NVIDIA Corp</td><td class='num'>4</td><td class='num'>$793.80</td><td class='num'>$820.82</td><td class='num bad'>$-27.02</td><td class='num bad'>-3.29%</td><td class='num'>0.80%</td></tr>
+<tr><td>PL</td><td>Planet Labs PBC</td><td class='num'>21</td><td class='num'>$774.90</td><td class='num'>$586.51</td><td class='num hot'>$188.39</td><td class='num hot'>32.12%</td><td class='num'>0.78%</td></tr>
+<tr><td>MRVL</td><td>Marvell Technology Inc</td><td class='num'>1</td><td class='num'>$164.95</td><td class='num'>$150.41</td><td class='num neutral'>$14.54</td><td class='num neutral'>9.67%</td><td class='num'>0.17%</td></tr></tbody></table></div></div>
+<div id='us-pnl' class='sort-panel'><div class='scroll'><table><thead><tr><th>代號</th><th>名稱</th><th class='num'>股數</th><th class='num'>現值</th><th class='num'>成本</th><th class='num'>損益</th><th class='num'>報酬率</th><th class='num'>美股占比</th></tr></thead><tbody><tr><td>KLAC</td><td>KLA Corp</td><td class='num'>3</td><td class='num'>$5,178.78</td><td class='num'>$5,459.38</td><td class='num bad'>$-280.60</td><td class='num bad'>-5.14%</td><td class='num'>5.24%</td></tr>
+<tr><td>FLY</td><td>Firefly Aerospace Inc</td><td class='num'>43</td><td class='num'>$1,453.40</td><td class='num'>$1,573.85</td><td class='num bad'>$-120.45</td><td class='num bad'>-7.65%</td><td class='num'>1.47%</td></tr>
+<tr><td>NVDA</td><td>NVIDIA Corp</td><td class='num'>4</td><td class='num'>$793.80</td><td class='num'>$820.82</td><td class='num bad'>$-27.02</td><td class='num bad'>-3.29%</td><td class='num'>0.80%</td></tr>
+<tr><td>ASML</td><td>ASML Holding NV</td><td class='num'>1</td><td class='num'>$1,427.02</td><td class='num'>$1,448.56</td><td class='num bad'>$-21.54</td><td class='num bad'>-1.49%</td><td class='num'>1.44%</td></tr>
+<tr><td>MRVL</td><td>Marvell Technology Inc</td><td class='num'>1</td><td class='num'>$164.95</td><td class='num'>$150.41</td><td class='num neutral'>$14.54</td><td class='num neutral'>9.67%</td><td class='num'>0.17%</td></tr>
+<tr><td>MU</td><td>Micron Technology Inc</td><td class='num'>2</td><td class='num'>$1,084.42</td><td class='num'>$1,050.51</td><td class='num neutral'>$33.91</td><td class='num neutral'>3.23%</td><td class='num'>1.10%</td></tr>
+<tr><td>LIN</td><td>Linde PLC</td><td class='num'>5</td><td class='num'>$2,539.60</td><td class='num'>$2,500.51</td><td class='num neutral'>$39.09</td><td class='num neutral'>1.56%</td><td class='num'>2.57%</td></tr>
+<tr><td>AVGO</td><td>Broadcom Inc</td><td class='num'>6</td><td class='num'>$2,527.68</td><td class='num'>$2,461.43</td><td class='num neutral'>$66.25</td><td class='num neutral'>2.69%</td><td class='num'>2.56%</td></tr>
+<tr><td>SATL</td><td>Satellogic Inc</td><td class='num'>414</td><td class='num'>$2,972.52</td><td class='num'>$2,822.67</td><td class='num neutral'>$149.85</td><td class='num neutral'>5.31%</td><td class='num'>3.01%</td></tr>
+<tr><td>PL</td><td>Planet Labs PBC</td><td class='num'>21</td><td class='num'>$774.90</td><td class='num'>$586.51</td><td class='num hot'>$188.39</td><td class='num hot'>32.12%</td><td class='num'>0.78%</td></tr>
+<tr><td>LRCX</td><td>Lam Research Corp</td><td class='num'>18</td><td class='num'>$4,620.96</td><td class='num'>$4,400.25</td><td class='num neutral'>$220.71</td><td class='num neutral'>5.02%</td><td class='num'>4.68%</td></tr>
+<tr><td>AMAT</td><td>Applied Materials Inc</td><td class='num'>29</td><td class='num'>$11,283.32</td><td class='num'>$10,893.49</td><td class='num neutral'>$389.83</td><td class='num neutral'>3.58%</td><td class='num'>11.42%</td></tr>
+<tr><td>AAPL</td><td>Apple Inc</td><td class='num'>18</td><td class='num'>$5,042.52</td><td class='num'>$4,583.35</td><td class='num good'>$459.17</td><td class='num good'>10.02%</td><td class='num'>5.10%</td></tr>
+<tr><td>LITE</td><td>Lumentum Holdings Inc</td><td class='num'>8</td><td class='num'>$7,599.44</td><td class='num'>$6,975.88</td><td class='num neutral'>$623.56</td><td class='num neutral'>8.94%</td><td class='num'>7.69%</td></tr>
+<tr><td>TSM</td><td>Taiwan Semiconductor Manufactu</td><td class='num'>36</td><td class='num'>$14,316.12</td><td class='num'>$12,547.25</td><td class='num good'>$1,768.87</td><td class='num good'>14.10%</td><td class='num'>14.49%</td></tr>
+<tr><td>GEV</td><td>GE Vernova Inc</td><td class='num'>28</td><td class='num'>$29,762.60</td><td class='num'>$26,931.63</td><td class='num good'>$2,830.97</td><td class='num good'>10.51%</td><td class='num'>30.12%</td></tr>
+<tr><td>BE</td><td>Bloom Energy Corp</td><td class='num'>25</td><td class='num'>$7,263.00</td><td class='num'>$3,335.04</td><td class='num hot'>$3,927.96</td><td class='num hot'>117.78%</td><td class='num'>7.35%</td></tr></tbody></table></div></div>
+<script>
+document.querySelectorAll('.tabbar').forEach(function(bar){
+  bar.querySelectorAll('.tabbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var group = bar.dataset.group;
+      document.querySelectorAll('.tabbar[data-group="'+group+'"] .tabbtn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('#'+group+'-share, #'+group+'-pnl').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.target).classList.add('active');
+    });
+  });
+});
+</script>
+
+<div class='footer'>本報告只依照方舟運算與提供資料整理，避免主觀預測；交易前仍以鏟屎官方舟 App 當日位階/風控輸出為準。</div>
+</div></body></html>
