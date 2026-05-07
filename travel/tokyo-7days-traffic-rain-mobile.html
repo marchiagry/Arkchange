@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>東京 7 天 6 夜｜每日交通動線與雨天備案</title>
+  <style>
+    :root{
+      --bg:#f7f3ec; --ink:#263238; --muted:#63717a; --card:#fffdf8;
+      --accent:#d85c41; --accent2:#1e88a8; --accent3:#7a9e55; --line:#eadfcd;
+      --shadow:0 14px 40px rgba(45,35,20,.12); --radius:24px;
+    }
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#fff8ee 0%,#eef7f9 46%,#f7f3ec 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.72;}
+    a{color:#0f6f9a;text-decoration:none;font-weight:750} a:hover{text-decoration:underline}.wrap{max-width:1080px;margin:0 auto;padding:22px 16px 56px}.hero{position:relative;overflow:hidden;border-radius:32px;padding:34px 24px;background:radial-gradient(circle at 15% 18%,rgba(255,255,255,.95) 0 18%,transparent 19%),linear-gradient(135deg,#20374d 0%,#2e6287 46%,#d95e45 100%);color:white;box-shadow:var(--shadow)}
+    .hero:after{content:"🗼 🚃 ☔ 🛍️ 🍜 🗻";position:absolute;right:18px;bottom:10px;font-size:42px;opacity:.22;letter-spacing:8px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:13px;backdrop-filter:blur(8px)}h1{margin:14px 0 10px;font-size:clamp(30px,8vw,58px);line-height:1.05;letter-spacing:-.04em}.hero p{margin:0;max-width:850px;color:rgba(255,255,255,.9);font-size:17px}.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.meta div{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:12px}.meta b{display:block;font-size:13px;color:#ffe9d8}.meta span{font-size:15px}.section{margin-top:22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:rgba(255,253,248,.92);border:1px solid rgba(234,223,205,.95);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}h2{font-size:25px;margin:0 0 12px;line-height:1.25}h3{font-size:21px;margin:0 0 8px}.muted{color:var(--muted);font-size:14px}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 10px;font-size:13px;font-weight:750;background:#f1eadf;color:#5a4737}.pill.blue{background:#e5f3f7;color:#13617a}.pill.green{background:#eaf3e1;color:#4e702b}.pill.red{background:#fee9e3;color:#9e3c28}.day{margin-top:16px}.dayhead{display:flex;gap:14px;align-items:flex-start}.badge{flex:0 0 auto;width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#f0a15f);color:white;display:grid;place-items:center;font-weight:900;box-shadow:0 10px 24px rgba(216,92,65,.28)}.badge small{display:block;font-size:12px;line-height:1}.badge span{font-size:24px;line-height:1}.route{margin-top:14px;padding:14px 14px;border-radius:18px;background:#fbf6ed;border:1px dashed #dccbb2}.route strong{display:block;margin-bottom:6px}.flow{display:flex;flex-wrap:wrap;gap:7px;align-items:center}.stop{background:white;border:1px solid #e7dbc8;border-radius:13px;padding:7px 10px;font-weight:700}.arrow{color:#b68b5b}.note{border-left:5px solid var(--accent2);background:#eef8fb;padding:12px 13px;border-radius:14px;margin-top:12px}.rain{border-left-color:#5c789d;background:#f0f5fb}.food{border-left-color:#b15a31;background:#fff2e9}.warn{border-left-color:#d9a02e;background:#fff8db}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.mini{border-radius:16px;padding:13px;background:white;border:1px solid #eadfcd}.mini b{display:block;margin-bottom:4px}.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{display:inline-flex;align-items:center;gap:7px;background:#263238;color:white!important;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:800}.btn.alt{background:#0f6f9a}.btn.rain{background:#5d6f87}.toc{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.toc a{display:block;text-align:center;background:#fffdf8;border:1px solid #eadfcd;border-radius:16px;padding:10px 5px;color:#3a3937;box-shadow:0 8px 18px rgba(45,35,20,.07);font-size:13px}.transport-card{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.kpi{background:#fff;border:1px solid #eadfcd;border-radius:18px;padding:14px}.kpi .big{font-size:23px;font-weight:900;color:#d85c41}.footer{font-size:13px;color:var(--muted);text-align:center;margin-top:28px}.cover-icons{font-size:46px;letter-spacing:8px;line-height:1.3}.mapline{font-size:13px;color:var(--muted);margin-top:6px}.high{font-weight:900;color:#9e3c28}.full{grid-column:1 / -1}ul{margin:6px 0 0 1.1em;padding:0}li{margin:4px 0}@media (max-width:760px){.wrap{padding:12px 10px 42px}.hero{border-radius:24px;padding:26px 18px}.hero:after{font-size:28px;right:8px}.meta,.grid,.two,.transport-card{grid-template-columns:1fr}.toc{grid-template-columns:repeat(2,1fr)}.dayhead{gap:10px}.badge{width:50px;height:50px;border-radius:15px}.card{padding:16px;border-radius:20px}.stop{font-size:14px;padding:6px 9px}.cover-icons{font-size:34px}.links .btn{width:100%;justify-content:center}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">手機版圖文行程｜每日交通動線＋雨天備案</div>
+    <h1>東京 7 天 6 夜<br>美食・購物・富士山・迪士尼</h1>
+    <p>住宿以新宿為核心，動線採「同區集中、少換線、雨天不狼狽」原則。此版特別補上每日交通走法、Google Maps 捷徑與雨天替代方案，適合在手機上邊走邊看。</p>
+    <div class="meta">
+      <div><b>住宿核心</b><span>新宿 / 新宿三丁目 / 西新宿</span></div>
+      <div><b>主軸</b><span>吃好、買好、動線順</span></div>
+      <div><b>遠程日</b><span>河口湖富士山、DisneySea</span></div>
+      <div><b>更新時間</b><span>2026-05-08 00:40 CST</span></div>
+    </div>
+  </header>
+
+  <section class="section card">
+    <h2>一眼看懂：7 天動線總覽</h2>
+    <div class="toc">
+      <a href="#d1">D1 抵達新宿</a><a href="#d2">D2 淺草上野秋葉原</a><a href="#d3">D3 銀座築地東京站</a><a href="#d4">D4 河口湖富士山</a><a href="#d5">D5 澀谷原宿表參道</a><a href="#d6">D6 DisneySea</a><a href="#d7">D7 最後採買回程</a>
+    </div>
+    <div class="transport-card" style="margin-top:14px">
+      <div class="kpi"><div class="big">新宿軸心</div><div class="muted">每天回到同一核心，晚上吃飯/藥妝/百貨方便。</div></div>
+      <div class="kpi"><div class="big">少跨區</div><div class="muted">同一天盡量走同一條地鐵/JR 動線，降低換車壓力。</div></div>
+      <div class="kpi"><div class="big">雨天可換</div><div class="muted">戶外比例高的日子都準備室內百貨、地下街或水族館替代。</div></div>
+    </div>
+  </section>
+
+  <section class="section grid">
+    <div class="card">
+      <h2>交通總原則</h2>
+      <ul>
+        <li><b>市區：</b>Suica / PASMO 手機卡最方便，JR＋東京 Metro 混用即可。</li>
+        <li><b>成田機場：</b>若住新宿，優先 N'EX 直達；想省預算可搭京成 Skyliner 到日暮里再轉 JR。</li>
+        <li><b>河口湖：</b>新宿高速巴士最直覺，旺季/週末需先訂位；遇大雨直接改室內日。</li>
+        <li><b>迪士尼：</b>新宿 → 東京/八丁堀 → 舞濱，再搭迪士尼單軌到 DisneySea。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>雨天備案使用法</h2>
+      <ul>
+        <li><b>小雨：</b>照原行程，但把戶外散步縮短，餐廳/百貨停留拉長。</li>
+        <li><b>大雨強風：</b>河口湖、明治神宮、代代木公園等戶外點優先替換。</li>
+        <li><b>備用室內區：</b>新宿地下街、銀座百貨、東京站一番街、池袋 Sunshine City、墨田水族館。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="d1" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>1</span></div><div><h2>抵達東京 → 進新宿 → 晚餐與初採買</h2><div class="pillrow"><span class="pill blue">機場移動日</span><span class="pill green">低體力</span><span class="pill red">晚餐＋藥妝</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">成田機場</span><span class="arrow">→</span><span class="stop">N'EX / Skyliner</span><span class="arrow">→</span><span class="stop">新宿</span><span class="arrow">→</span><span class="stop">飯店寄放行李</span><span class="arrow">→</span><span class="stop">新宿晚餐</span></div><div class="mapline">成田 T1 約 35.7631, 140.3864；新宿站約 35.6903, 139.7005（OSM/Nominatim）。</div></div>
+    <div class="two"><div class="mini"><b>美食/購物建議</b>晚餐選新宿站周邊：思い出横丁、ルミネ/NEWoMan、伊勢丹地下食品街。藥妝先買小件，別第一晚搬太重。</div><div class="mini"><b>時間控制</b>抵達日不排遠點；辦完入住後以「吃飯＋熟悉車站出口」為主。</div></div>
+    <div class="note rain"><b>雨天備案：</b>全程改走新宿地下街、Lumine、NEWoMan、伊勢丹、京王/小田急百貨；晚餐挑車站連通或離出口 3–5 分鐘內餐廳。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Narita%20Airport%20Terminal%201&destination=Shinjuku%20Station&travelmode=transit">打開機場→新宿交通</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Shinjuku%20dinner%20Tokyo">新宿晚餐地圖</a></div>
+  </section>
+
+  <section id="d2" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>2</span></div><div><h2>淺草 → 晴空塔 → 上野 → 秋葉原</h2><div class="pillrow"><span class="pill blue">東東京一線</span><span class="pill green">拍照＋散步</span><span class="pill red">上野阿美橫＋電器動漫</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">新宿</span><span class="arrow">→</span><span class="stop">淺草寺/雷門</span><span class="arrow">→</span><span class="stop">晴空塔</span><span class="arrow">→</span><span class="stop">上野/阿美橫</span><span class="arrow">→</span><span class="stop">秋葉原</span><span class="arrow">→</span><span class="stop">新宿</span></div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>新宿搭 JR/Metro 轉到淺草；淺草到晴空塔可步行或搭東武/地鐵；上野與秋葉原用 JR 山手線串起。</div><div class="mini"><b>吃買重點</b>淺草小吃、上野阿美橫零食藥妝、秋葉原電器/模型/扭蛋。</div></div>
+    <div class="note rain"><b>雨天備案：</b>淺草戶外街道縮短，改排 <span class="high">晴空塔 Solamachi 商場＋墨田水族館</span>；上野改上野 Marui/Atre，秋葉原走 Yodobashi Akiba。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Station&destination=Asakusa%20Senso-ji&travelmode=transit">新宿→淺草</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Asakusa%20Senso-ji&destination=Tokyo%20Skytree&travelmode=transit">淺草→晴空塔</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Tokyo%20Skytree&destination=Ueno%20Ameyoko&travelmode=transit">晴空塔→上野</a></div>
+  </section>
+
+  <section id="d3" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>3</span></div><div><h2>築地場外 → 銀座 → 東京站/丸之內</h2><div class="pillrow"><span class="pill blue">市中心精華</span><span class="pill green">海鮮早餐</span><span class="pill red">百貨購物</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">新宿</span><span class="arrow">→</span><span class="stop">築地場外市場</span><span class="arrow">→</span><span class="stop">銀座</span><span class="arrow">→</span><span class="stop">東京站一番街</span><span class="arrow">→</span><span class="stop">丸之內夜景</span><span class="arrow">→</span><span class="stop">新宿</span></div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>新宿三丁目搭丸之內線可直進銀座/東京；築地可由銀座步行或地鐵短轉。</div><div class="mini"><b>吃買重點</b>築地早餐、銀座三越/GINZA SIX/Loft、東京站伴手禮與角色商店。</div></div>
+    <div class="note rain"><b>雨天備案：</b>這天最適合雨天照走：銀座地下通道＋百貨密集，東京站一番街全室內。若雨很大，直接取消築地戶外攤位，改銀座百貨午餐。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Station&destination=Tsukiji%20Outer%20Market&travelmode=transit">新宿→築地</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Tsukiji%20Outer%20Market&destination=Ginza%20Six&travelmode=walking">築地→銀座</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Ginza%20Station&destination=Tokyo%20Station%20Ichibangai&travelmode=transit">銀座→東京站</a></div>
+  </section>
+
+  <section id="d4" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>4</span></div><div><h2>河口湖富士山一日：湖景、纜車、溫泉/咖啡</h2><div class="pillrow"><span class="pill blue">遠程日</span><span class="pill green">需早出門</span><span class="pill red">天氣決定成敗</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">新宿高速巴士總站</span><span class="arrow">→</span><span class="stop">河口湖站</span><span class="arrow">→</span><span class="stop">天上山纜車</span><span class="arrow">→</span><span class="stop">河口湖畔/大石公園</span><span class="arrow">→</span><span class="stop">回新宿</span></div><div class="mapline">河口湖站約 35.4985, 138.7686（OSM/Nominatim）。高速巴士旺季一定先預約，回程也一起訂。</div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>新宿高速巴士直達河口湖最省腦；也可 JR 特急到大月轉富士急行，但轉乘較多。</div><div class="mini"><b>停留策略</b>天氣好先拍富士山，不要把湖景放到傍晚；午餐/咖啡作為彈性緩衝。</div></div>
+    <div class="note rain"><b>雨天備案：</b>若預報大雨/雲厚看不到富士山，建議與 D3 或 D5 對調。當天改 <span class="high">新宿百貨＋池袋 Sunshine City/水族館＋無印良品/Loft 採買</span>；河口湖不要硬衝，交通時間長但景色折損大。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Expressway%20Bus%20Terminal&destination=Kawaguchiko%20Station&travelmode=transit">新宿→河口湖</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Kawaguchiko%20Station&destination=Mt.%20Fuji%20Panoramic%20Ropeway&travelmode=transit">河口湖站→纜車</a><a class="btn rain" href="https://www.google.com/maps/search/?api=1&query=Sunshine%20City%20Ikebukuro">雨備：池袋 Sunshine City</a></div>
+  </section>
+
+  <section id="d5" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>5</span></div><div><h2>澀谷 → 原宿 → 表參道 → 新宿夜購</h2><div class="pillrow"><span class="pill blue">西東京潮流線</span><span class="pill green">年輕品牌</span><span class="pill red">購物主力日</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">新宿</span><span class="arrow">→</span><span class="stop">澀谷 Scramble / Shibuya Sky</span><span class="arrow">→</span><span class="stop">原宿竹下通</span><span class="arrow">→</span><span class="stop">明治神宮/表參道</span><span class="arrow">→</span><span class="stop">新宿</span></div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>新宿到澀谷搭 JR 山手線；澀谷→原宿同線一站，也可沿 Cat Street 慢慢走到表參道。</div><div class="mini"><b>吃買重點</b>澀谷 Parco/Loft/109、原宿小店、表參道甜點咖啡，晚上回新宿補百貨。</div></div>
+    <div class="note rain"><b>雨天備案：</b>明治神宮與 Cat Street 縮短，改排 <span class="high">Shibuya Scramble Square、Hikarie、Parco、Omotesando Hills</span> 室內購物線。大雨時不要走太長戶外路段。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Station&destination=Shibuya%20Station&travelmode=transit">新宿→澀谷</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Shibuya%20Scramble%20Square&destination=Harajuku%20Station&travelmode=transit">澀谷→原宿</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Harajuku%20Station&destination=Omotesando%20Hills&travelmode=walking">原宿→表參道</a></div>
+  </section>
+
+  <section id="d6" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>6</span></div><div><h2>Tokyo DisneySea 全日</h2><div class="pillrow"><span class="pill blue">早出晚歸</span><span class="pill green">排隊體力日</span><span class="pill red">APP/票券先準備</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">新宿</span><span class="arrow">→</span><span class="stop">東京/八丁堀</span><span class="arrow">→</span><span class="stop">舞濱</span><span class="arrow">→</span><span class="stop">Disney Resort Line</span><span class="arrow">→</span><span class="stop">DisneySea</span><span class="arrow">→</span><span class="stop">新宿</span></div><div class="mapline">Tokyo DisneySea 約 35.6273, 139.8844（OSM/Nominatim）。</div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>預留 70–90 分鐘從新宿到園區入口；回程人潮大，別把隔天早班機排太緊。</div><div class="mini"><b>園區策略</b>入園先處理熱門設施/付費項目，午餐錯峰，傍晚看體力決定是否留到夜間秀。</div></div>
+    <div class="note rain"><b>雨天備案：</b>小雨 DisneySea 仍可玩，但準備輕便雨衣、防水鞋套、行動電源防水袋。若遇強風豪雨且可調票，改成 <span class="high">台場 DiverCity/Aqua City＋豐洲/有明室內購物</span>，保留迪士尼到天氣較穩日。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Station&destination=Tokyo%20DisneySea&travelmode=transit">新宿→DisneySea</a><a class="btn rain" href="https://www.google.com/maps/search/?api=1&query=DiverCity%20Tokyo%20Plaza">雨備：台場 DiverCity</a></div>
+  </section>
+
+  <section id="d7" class="section card day">
+    <div class="dayhead"><div class="badge"><small>DAY</small><span>7</span></div><div><h2>新宿最後採買 → 機場回程</h2><div class="pillrow"><span class="pill blue">收尾日</span><span class="pill green">低風險</span><span class="pill red">伴手禮/藥妝補貨</span></div></div></div>
+    <div class="route"><strong>建議交通動線</strong><div class="flow"><span class="stop">飯店退房寄放行李</span><span class="arrow">→</span><span class="stop">新宿最後採買/午餐</span><span class="arrow">→</span><span class="stop">取行李</span><span class="arrow">→</span><span class="stop">N'EX / Limousine Bus / Skyliner</span><span class="arrow">→</span><span class="stop">成田機場</span></div></div>
+    <div class="two"><div class="mini"><b>交通打法</b>回程日不要跨遠區；以新宿站周邊完成所有補貨，至少抓國際線起飛前 3 小時抵達機場。</div><div class="mini"><b>採買清單</b>百貨地下食品、藥妝、Uniqlo/GU、伴手禮。液體/刀具類注意托運規則。</div></div>
+    <div class="note rain"><b>雨天備案：</b>完全在新宿地下街與百貨完成：Lumine、NEWoMan、伊勢丹、京王百貨。若搭利木津巴士，雨天搬行李壓力最低；但需查班次與預留塞車緩衝。</div>
+    <div class="links"><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&origin=Shinjuku%20Station&destination=Narita%20Airport%20Terminal%201&travelmode=transit">新宿→成田機場</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Shinjuku%20souvenir%20shopping">新宿伴手禮地圖</a></div>
+  </section>
+
+  <section class="section grid">
+    <div class="card">
+      <h2>行前檢查清單</h2>
+      <ul>
+        <li>Suica/PASMO 手機卡或實體交通卡。</li>
+        <li>河口湖高速巴士來回先訂，遇壞天氣再評估改期。</li>
+        <li>DisneySea 門票、官方 APP、行動電源。</li>
+        <li>雨衣/折傘、防水鞋、塑膠袋或防水袋。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>小露提醒</h2>
+      <div class="note warn"><b>最需要保留彈性的兩天：</b>D4 河口湖、D6 DisneySea。東京市區行程室內備案很多，真正該看天氣調整的是富士山與遊樂園。</div>
+      <div class="note food"><b>購物節奏：</b>前半段先看價與品項，D5/D7 再集中買；避免每天提重物走太多路。</div>
+    </div>
+  </section>
+
+  <p class="footer">製作：小露｜資料基準：路線錨點以 OpenStreetMap/Nominatim 查核，實際班次、營業時間與票券仍請以出發當日官方資訊為準。</p>
+</div>
+</body>
+</html>
